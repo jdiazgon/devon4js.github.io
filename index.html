@@ -1,1 +1,379 @@
-Hello world!
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>devon4JS</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+</head>
+
+<body data-spy="scroll" data-target=".DEVON-SIDEBAR" data-offset="50">
+    <!-- NAVIGATION-->
+    <div class="fixed-top" style="pointer-events: none">
+        <!-- NAV BAR -->
+        <nav class="navbar navbar-expand-md NAV-MENU shadow" style="pointer-events: auto;">
+            <a href="https://devonfw.com" class="navbar-brand">
+                <img class="LogoDevonfw" src="images/DevonfwOASPWhite.png" alt="devonfw">
+            </a>
+            <button class="navbar-toggler btn-secondary" data-toggle="collapse" data-target="#navbarMenu">&#9776
+                <span class="navbar-toggle-icon"></span>
+            </button>
+
+            <div id="navbarMenu" class="collapse navbar-collapse nav-properties text-center">
+                <ul class="navbar-nav row-1 justify-content-center align-items-center text-white">
+                    <!-- Only internal -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://devonfw.com">Home</a>
+                    </li>
+                    <div class="white-band-separator d-md-block d-sm-none d-none"> </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://devonfw.com/news" data-toggle="collapse" data-target="#itemWhatsNew">What's New?</a>
+                        <div id="itemWhatsNew" class="collapse">
+                            <ul class="navbar-nav">
+                                <div>
+                                    <a class="nav-link" href="https://devonfw.com/news">News</a>
+                                    <a class="nav-link only-internal" href="https://troom.capgemini.com/sites/vcc/devon/roadmap.aspx">Roadmap &amp; Releases</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <div class="white-band-separator d-md-block d-sm-none d-none"> </div>
+                    <li class="nav-item only-internal">
+                        <a class="nav-link" href="http://de-mucevolve02/files/devonfw/current/">Download</a>
+                    </li>
+                    <div class="only-internal">
+                        <div class="white-band-separator d-md-block d-sm-none d-none"> </div>
+                    </div>
+                    <li class="nav-item only-internal">
+                        <a class="nav-link" href="https://troom.capgemini.com/sites/vcc/devon/getstarted.aspx">Getting Started</a>
+                    </li>
+                    <div class="only-internal">
+                        <div class="white-band-separator d-md-block d-sm-none d-none"> </div>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#itemXplore">Xplore devonfw</a>
+                        <div id="itemXplore" class="collapse">
+                            <ul class="navbar-nav">
+                                <div>
+                                    <a class="nav-link" href="https://devonfw.com/devon4j">devon4J</a>
+                                    <a class="nav-link" href="https://devonfw.com/devon4js">devon4JS</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <div class="only-internal">
+                        <div class="white-band-separator d-md-block d-sm-none d-none"> </div>
+                    </div>
+                    <li class="nav-item only-internal">
+                        <a class="nav-link" href="https://troom.capgemini.com/sites/vcc/devon/collaboration.aspx">Community</a>
+                    </li>
+                    <div class="only-internal">
+                        <div class="white-band-separator d-md-block d-sm-none d-none"> </div>
+                    </div>
+                    <li class="nav-item only-internal">
+                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#itemResources">Resources & Support</a>
+                        <div id="itemResources" class="collapse">
+                            <ul class="navbar-nav">
+                                <div>
+                                    <a class="nav-link" href="https://troom.capgemini.com/sites/vcc/devon/faq.aspx">FAQs</a>
+                                    <a class="nav-link" href="https://troom.capgemini.com/sites/vcc/devon/training_hub.aspx">Training</a>
+                                    <a class="nav-link" href="https://troom.capgemini.com/sites/vcc/devon/references.aspx">Sales & Marketing</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- SIDE BAR -->
+        <div class="row container-fluid DEVON m-0 px-0 " style="pointer-events: none">
+            <div class="col-12 col-md-3 m-0 p-0">
+                <nav class="navbar container-fluid DEVON-SIDEBAR d-none d-md-block" style="pointer-events: auto;">
+                    <!--links-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item  pl-4 py-2">
+                            <a class="nav-link font-weight-bold" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item  pl-4 py-2">
+                            <a class="nav-link font-weight-bold" href="#gettingStarted">Getting started</a>
+                        </li>
+                        <li class="nav-item  pl-4 py-2">
+                            <a class="nav-link font-weight-bold" href="#current-release">Current Release</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container-fluid DEVON DEVON-CONTAINER m-0 px-0">
+        <div class="d-none">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="row m-0 p-0">
+            <!-- GHOST COLUMN-->
+            <div class="col-0 col-md-3 m-0 p-0">
+
+            </div>
+            <!-- CONTENT -->
+            <div class="col-12 col-md-9 m-0 p-0">
+                <section class="cut-br">
+                    <div class="row m-0 padding-top-md text-white bg-devon background-devon shadow introduction">
+                        <br>
+                        <h1 class="p-1 font-weight-bold underline-devon-white">devonfw 4 JavaScript</h1>
+                        <br>
+                        <p class="p-1">
+                            The Open Application Standard Platform provides a solution to building applications which combine best-in class-frameworks
+                            and libraries as well as industry proven practices and code conventions. devon4JS is the JavaScript variant of
+                            the devonfw focusing on JavaScript client's part of applications
+                        </p>
+                    </div>
+                </section>
+                <div id="overview" class="text-center anchorSection">
+                    <div class="cut-tl">
+                        <br>
+                        <h5 id="developers-slogan" class="slogan mb-0 mt-4 mx-3 p-5">From developers to developers!</h5>
+                        <br>
+                        <h1 id="title-section" class="font-weight-bold DEVONcolor mb-3 py-5 sideline-devon-blue d-none d-md-inline">Overview</h1>
+                        <h1 id="title-section" class="font-weight-bold DEVONcolor mb-3 py-5 d-inline d-md-none">Overview</h1>
+                        <!-- DOCUMENTATION SECTION -->
+                        <section id="overview-documentation" class="mx-auto mr-1 mb-1 px-5">
+                            <br>
+                            <div class="d-inline">
+                                <h2 class="underline-devon-black">Documentation</h2>
+
+                                <p class="py-5 px-4">
+                                    Learn more about the devonfw front-end implementation based on Angular Framework.
+                                </p>
+                                <!-- Buttons row  -->
+                                <div class="row d-inline m-0" style="padding-bottom:50px;">
+                                    <div class="col-lg-11 col-md-11 col-sm-11 col-11 text-xs-center button-style mx-auto">
+                                        <a href="https://github.com/devonfw/devon/wiki/Client-GUI-Angular-Introduction-to-oasp4js" class="btn btn-primary mx-4 mb-2 px-5 py-2 py-md-4"> Wiki </a>
+                                        <a href="https://github.com/oasp/oasp-vscode-ide" class="btn btn-primary mx-4 mb-2 px-5 py-2 py-md-4"> IDE </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- APPLICATION REFERENCE SECTION -->
+                        <section id="overview-applic-ref" class=" mx-auto mr-1 mb-1 px-5">
+                            <br>
+                            <div class="d-inline">
+                                <h2 class="underline-devon-black">Reference Application</h2>
+                                <p class="py-5 px-4">
+                                    My Thai Star is an iCSD Capgemini initiative that hosts an application reference. This application is about the management
+                                    of a restaurant.
+                                </p>
+                                <!-- Buttons row  -->
+                                <div class="row d-inline m-0" style="padding-bottom:50px;">
+                                    <div class="col-lg-11 col-md-11 col-sm-11 col-11 text-xs-center button-style mx-auto">
+                                        <a href="http://de-mucdevondepl01:8090" class="btn btn-primary mx-4 mb-2 px-5 py-md-4 py-2"> Web App </a>
+                                        <a href="https://github.com/oasp/my-thai-star/tree/master/angular" class="btn btn-primary mx-4 mb-2 px-5 py-md-4 py-2"> Stable </a>
+                                        <a href="https://github.com/oasp/my-thai-star/tree/develop/angular" class="btn btn-primary mx-4 mb-2 px-5 py-md-4 py-2"> Develop </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- APPLICATION TEMPLATE SECTION -->
+                        <section id="overview-applic-template" class=" mx-auto mr-1 mb-1 px-5">
+                            <br>
+                            <div class="d-inline">
+                                <h2 class="underline-devon-black">Application Starters</h2>
+                                <p class="py-5 px-4">
+                                    devonfw offers you a template based on Angular 4, Material Design and Covalent. The application starters define a structure
+                                    as well as integrates best-in-class frameworks and libraries. In addition to this, the template includes
+                                    Angular CLI scripts which support developers in their activities such as coding, testing and building the
+                                    application.
+                                </p>
+                                <!-- Buttons row  -->
+                                <div class="row d-inline" style="padding-bottom:50px;">
+                                    <div class="col-lg-11 col-md-11 col-sm-11 col-11 text-xs-center button-style mx-auto">
+                                        <a href="https://github.com/oasp/oasp4js-application-template" class="btn btn-primary mx-4 mb-2 px-5 py-2 py-md-4"> View details </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- DEVON4JS CATALOG SECTION -->
+                        <section id="overview-sample-application" class=" mx-auto mr-1 mb-1 px-5">
+                            <br>
+                            <div class="d-inline">
+                                <h2 class="underline-devon-black">devon4JS Catalog</h2>
+                                <p class="py-5 px-4">
+                                    devon4JS Catalog provides the collection of Angular components, sorted on the basis of UI frameworks such as Material Design,
+                                    Bootstrap, PrimeNG, etc.
+                                </p>
+                                <!-- Buttons row  -->
+                                <div class="row d-inline" style="padding-bottom:50px;">
+                                    <div class="col-lg-11 col-md-11 col-sm-11 col-11 text-xs-center button-style mx-auto" style="margin-bottom: 60px;">
+                                        <a href="https://oasp.github.io/oasp4js-catalog/" class="btn btn-primary mx-4 mb-2 px-5 py-md-4 py-2"> View details </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <section id="gettingStarted" class="container-fluid anchorSection">
+                    <div class="sectionGrey">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <h1 class="title-devon text-center DEVONcolor font-weight-bold mb-3 py-5">
+                                    Getting started
+                                </h1>
+                            </div>
+                            <div class="gettingStarted container-fluid">
+                                <div class="row">
+                                    <div class="col-12 offset-0 offset-md-2 col-md-10 get-started-title text-md-left text-center"><a href="https://github.com/oasp/oasp-tutorial-sources/wiki/OASP4jsGettingStartedHome">Follow the getting started tutorial</a></div>
+                                    <div class="col-12 col-md-2 my-3 text-center">
+                                        <img class="d-inline-block" src="images/read_icon.png">
+                                    </div>
+                                    <div class="col-12 col-md-10 get-started-body">
+                                        <p class="my-3">
+                                            The devon4JS getting started guide introduces you to devonfw and in particular devon4JS. You'll learn about a devon4JS application's overview, structure and components, based on our <strong>My Thai Star reference application</strong>. Afterwards you'll be guided through the process of building your first devon4JS application from scratch, <strong>Jump the Queue</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12 offset-0 col-md-10 offset-md-2 get-started-title text-md-left text-center"><a href="https://github.com/oasp/oasp4JS-angular-catalog">Use our component catalog</a></div>
+                                    <div class="col-12 col-md-2 my-3 text-center">
+                                        <img class="d-inline-block" src="images/read_icon.png">
+                                    </div>
+                                    <div class="col-12 col-md-10 get-started-body">
+                                        <p class="my-3">
+                                            Our component catalog contains useful components from <strong>Material Design</strong>, <strong>Bootstrap</strong>, <strong>PrimeNG</strong> and more.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12 offset-0 col-md-10 offset-md-2 get-started-title text-md-left text-center"><a href="">Use the devon4JS template to start a new project</a></div>
+                                    <div class="col-12 col-md-2 my-3 text-center">
+                                        <img class="d-inline-block" src="images/enviroment_icon.png">
+                                    </div>
+                                    <div class="col-12 col-md-10 get-started-body">
+                                        <p class="my-3">
+                                            If you're already familiar with all the technical details and just want to start developing a devon4JS application, use the devon4JS application template.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12 offset-0 col-md-10 offset-md-2 get-started-title text-center text-md-left"><a href="">View the sample application</a></div>
+                                    <div class="col-12 col-md-2 my-3 text-center">
+                                        <img class="d-inline-block" src="images/view_icon.png">
+                                    </div>
+                                    <div class="col-12 col-md-10 get-started-body">
+                                        <p class="my-3">
+                                            Take a look at the devon4JS client in action with our reference application and showcase "My Thai Star"
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 offset-0 col-md-10 offset-md-2 get-started-title text-center text-md-left"><a href="">Help making devonfw even better</a></div>
+                                    <div class="col-12 col-md-2 my-3 text-center">
+                                        <img class="d-inline-block" src="images/help_icon.png">
+                                    </div>
+                                    <div class="col-12 col-md-10 get-started-body">
+                                        <p class="my-3">
+                                            Remember this is a joint effort and you are welcome to contribute.        
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="current-release" class="anchorSection">
+                    <div class="text-center py-5">
+                        <h1 class="title-devon text-center DEVONcolor font-weight-bold mb-3 py-5 sideline-devon-blue d-none d-md-inline">Current Release</h1>
+                        <h1 class="title-devon text-center DEVONcolor font-weight-bold mb-3 py-5 d-inline d-md-none">Current Release</h1>
+                        <h2 class="text-center background-devon text-white p-5 mt-5"> Latest release of devon4JS</h2>
+                        <h4 class="text-center p-4">Main features</h4>
+                        <ul class="text-secondary">
+                            <li class="p-2">devon4JS assets updated to Angular 6 (as well as for Ionic 3.20.0)</li>
+                            <li class="p-2">devon4JS Angular application template updated to Angular 6 with visual improvements and bugfixes. </br>More details
+                                in
+                                <a href="https://github.com/oasp/oasp4js-application-template" target="_blank">https://github.com/oasp/oasp4js-application-template</a>
+                            </li>
+                            <li class="p-2">devon4JS Ionic application template updated and improved. </br>More details in
+                                <a href="https://github.com/oasp/oasp4js-ionic-application-template" target="_blank">https://github.com/oasp/oasp4js-ionic-application-template</a>
+                            </li>
+                            <li class="p-2">PWA enabled</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="container-fluid bg-dark text-white footer footer-bottom">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12 text-xs-center">
+
+                </div>
+            </div>
+            <br>
+            <div class="row d-none d-sm-block">
+                <div class="col-md-6 col-sm-6  ">
+                    <h3>
+                        <b>Important Links</b>
+                    </h3>
+                    <p>
+                        <span>
+                            <a href="https://devonfw.com" class="text-white">devonfw</a>
+                        </span> |
+                        <span>
+                            <a href="https://devonfw.com/devon4j" class="text-white">devon4J</a>
+                        </span> |
+                        <span>
+                            <a href="https://devonfw.com/devon4js" class="text-white">devon4JS</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-5 col-12 text-xs-center">
+                    <p>© Capgemini 2018
+                        <span style="margin-left: 17mm">
+                            <a href="https://devonfw.com/terms-of-use" class="text-white">Terms of Use</a>
+                        </span>
+                    </p>
+                    <p class="destacado">This page is maintained by Capgemini</p>
+                </div>
+                <!--iconos-->
+                <div class="col-lg-4 col-md-12 col-sm-4 col-12 text-xs-center ">
+                    <a href="https://www.slideshare.net/capgemini"><img src="images/slideshare.png" class="icon m-2" width="30px" height="30px" mb-1></a>
+                    <a href="https://www.facebook.com/Capgemini/"><img src="images/facebook.png" class="icon m-2" width="30px" height="30px" mb-1></a>
+                    <a href="https://twitter.com/capgemini"><img src="images/twitter.png" class="icon m-2" width="30px" height="30px" mb-1></a>
+                    <a href="http://www.linkedin.com/company/capgemini"><img src="images/linkedin.png" class="icon m-2" width="30px" height="30px" mb-1></a>
+                    <a href="https://www.youtube.com/user/capgeminimedia"><img src="images/youtube.png" class="icon m-2" width="30px" height="30px" mb-1></a>
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-2 col-12 text-xs-center m-2">
+                    <a href="https://www.es.capgemini.com/">
+                        <img src="images/CapgeminiLogoWhite.png" width="150px" height="30px" ml-0>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Bootstrap 4 JS --> 
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<!-- Custom JS -->
+<script src="js/devon.js"></script>
+</html>
