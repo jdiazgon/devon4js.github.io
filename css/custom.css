@@ -766,3 +766,41 @@ section.cut-br {
 .gettingStarted .get-started-body {
   font-size: 12pt;
 }
+
+#navbarMenu .nav-link.active {
+  background-color: transparent;
+  position: relative;
+}
+
+#navbarMenu .nav-link.active::after {
+  position: absolute;
+  content: '';
+  bottom: -5px;
+  left: 10%;
+  width: 80%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+#documents-section .fas {
+  font-size: 32pt;
+}
+
+.document-entry:hover {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+.document-entry a {
+  color: black;
+}
+
+.document-entry a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+#documents-section .col-6 {
+  padding: 0 !important;
+}
