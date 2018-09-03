@@ -804,3 +804,17 @@ section.cut-br {
 #documents-section .col-6 {
   padding: 0 !important;
 }
+
+#documents-section h2 {
+  font-weight: bold;
+}
+
+#code-section h3 {
+  height: 2em;
+  vertical-align: text-bottom;
+}
+
+#code-section p {
+  font-size: 12pt;
+  height: 3em;
+}
