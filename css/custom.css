@@ -756,7 +756,7 @@ section.cut-br {
   font-size: 14pt;
 } 
 
-.gettingStarted .get-started-title::before {
+.get-started-title::before {
   counter-increment: getting-started-counter;
   content: counter(getting-started-counter) ". ";
   color: #4bbdec;
