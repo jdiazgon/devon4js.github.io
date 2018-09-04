@@ -818,3 +818,12 @@ section.cut-br {
   font-size: 12pt;
   height: 3em;
 }
+
+.document-header-title h3{
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.document-body p {
+ font-size: 12pt;
+}
