@@ -819,6 +819,10 @@ section.cut-br {
   height: 3em;
 }
 
+#code-section .btn.btn-primary {
+  font-size: 12pt;
+}
+
 .document-header-title h3{
   font-size: 20pt;
   font-weight: bold;
