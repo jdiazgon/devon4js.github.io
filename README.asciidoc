@@ -1,3 +1,36 @@
-= devon4js.github.io
+= <devon4xx>.github.io
 
-This is the devon4JS website, localized at https://devon4js.github.io.
+This branch contains a template to create <devon4xx>.github.io syled webpages.
+
+== DOCUMENTS Page
+
+The `index.html` file is for the tab called "Documents". The following steps walk through the changes to be made on `index.html`.
+
+. `index.html` Line 54: Change these list items to customize the side navigation bar.
+. `index.html` Line 88: This is the main title. For example "devonfw 4 JavaScript" or "devonfw 4 Java". Customize as you like.
+. `index.html` Line 92: Add a short stack description. Feel free to get some ideas fomr the https://devon4js.github.io page.
+. `index.html` Line 97: If you wish to add custom content that does not exist on the devon4JS page, add it after the `</section>` tag. The following `<section>` tag contains the grid from the mockup.
+. `index.html` Line 98: The following lines can be customized as you like. The template provides five elements in three rows (2, 2, 1), called "Architecture Basics", "Coding conventions", "Environment", "Product owners", "Samples".
+. The footer can remain untouched.
+
+== CODE Page
+
+The `code.html` file is for the "Code" tab. The following steps walk through the changes to be made on `code.html`.
+
+. `code.html` Line 54: Customize the side navigation items
+. `code.html` Line 88: Customize the spaceholder in the title (devon4XX --> devon4JS etc.)
+. `code.html` Line 91: Enter some code description for the technology
+. `code.html` Line 97: Custom content can be inserted after the `</section>` tag.
+. `code.html` LIne 102: The link buttons can be inserted here. The template contains three links, "devon4XX Project", "devon4XX Application Template" and "devon4XX Component Gallery". Bootstrap is used for the 12 column grid layout. As the template uses three buttons, the containers use the class `col-md-4`, as `4 column units x three button containers = 12`. If you want to have more buttons simply use `col-md-x` where as `x` is `12 / button container count`. Two buttons would use `col-md-6`, six buttons would use `cold-md-2` and so on. Preferably create new rows before adding too many buttons in one row, otherwise the page is too full.
+. The footer can remain untouched.
+
+== GET STARTED Page
+
+The `getstarted.html` file is for the "Get Started" tab. The following steps walk through the changes to be made on `code.html`.
+
+. `getstarted.html` Line 54: Customize the side navigation items
+. `getstarted.html` Line 88: Change the "Getting started" title. E.g.: "Getting started with devon4JS"
+. `getstarted.html` Line 91: Change the "Getting started" description.
+. `getstarted.html` Line 97: Custom content can be inserted after the closing `</section>` tag.
+. `getstarted.html` Line 98: This section displays a list of steps a new user can perform to get started with the specific technology. Again, I'd recommend to take a look a the devon4JS page to get a general idea on how this page should look like. The titles can be wrapped in `<a>` tags to link to GitHub guides, templates or showcases.
+. The footer can remain untouched.
