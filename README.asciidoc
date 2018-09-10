@@ -1,3 +1,3 @@
-= devon4js.github.io
+= devon4ng.github.io
 
-This is the devon4JS website, localized at https://devon4js.github.io.
+This is the devon4ng website, localized at https://devon4ng.github.io.
